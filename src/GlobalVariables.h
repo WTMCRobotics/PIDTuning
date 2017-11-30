@@ -16,10 +16,7 @@ public:
 	static const int RIGHT_SLAVE = 3;
 	static const int RIGHT_MASTER = 4;
 
-	static double DEADBAND;
-	static double MAX_SPEED;
+	static double DEADBAND () {return .3;}
+	static double MAX_SPEED() { return 1024;}
 };
-
-double GlobalVariables::DEADBAND = .3;
-double GlobalVariables::MAX_SPEED = 1024;
 #endif /* SRC_GLOBALVARIABLES_H_ */
