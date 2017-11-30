@@ -45,8 +45,8 @@ void TankDrive::Stop()
 
 void TankDrive::Drive(double left, double right)
 {
-	left2 = (fabs(left) > GlobalVariables::DEADBAND) ? left * GlobalVariables::MAX_SPEED : 0;
-	right2 = (fabs(right) > GlobalVariables::DEADBAND) ? right * GlobalVariables::MAX_SPEED : 0;
+	left2 = (fabs(left) > GlobalVariables::DEADBAND()) ? left * GlobalVariables::MAX_SPEED() : 0;
+	right2 = (fabs(right) > GlobalVariables::DEADBAND()) ? right * GlobalVariables::MAX_SPEED() : 0;
 
 	leftMaster.Set(left2);
 	rightMaster.Set(-right2);
