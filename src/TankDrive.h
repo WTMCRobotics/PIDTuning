@@ -22,10 +22,10 @@ class TankDrive
 		void Stop();
 		void Drive(double left, double right);
 		double getLeftEncoder() { return leftMaster.GetEncPosition();}
-		double getLeftPosition() {return leftMaster.GetPosition();}
+		double getLeftSpeed() {return leftMaster.GetSpeed();}
 		double getLeftError() {return leftMaster.GetClosedLoopError();}
 		double getRightEncoder() { return rightMaster.GetEncPosition();}
-		double getRightPosition() {return rightMaster.GetPosition();}
+		double getRightSpeed() {return rightMaster.GetSpeed();}
 		double getRightError() {return rightMaster.GetClosedLoopError();}
 	private:
 		CANTalon leftMaster {GlobalVariables::LEFT_MASTER};
