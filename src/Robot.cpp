@@ -72,8 +72,8 @@ private:
 	{
 		frc::SmartDashboard::PutNumber("Left Encoder", drivetrain.getLeftEncoder());
 		frc::SmartDashboard::PutNumber("Right Encoder", drivetrain.getRightEncoder());
-		frc::SmartDashboard::PutNumber("Left Position", drivetrain.getLeftPosition());
-		frc::SmartDashboard::PutNumber("Right Position", drivetrain.getRightPosition());
+		frc::SmartDashboard::PutNumber("Left Speed", drivetrain.getLeftSpeed());
+		frc::SmartDashboard::PutNumber("Right Speed", drivetrain.getRightSpeed());
 		frc::SmartDashboard::PutNumber("Left Error", drivetrain.getLeftError());
 		frc::SmartDashboard::PutNumber("Right Error", drivetrain.getRightError());
 	}
